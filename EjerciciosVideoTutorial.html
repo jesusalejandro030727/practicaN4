@@ -1,0 +1,126 @@
+<!DOCTYPEhtml >
+< html >
+< cuerpo >
+    < guión >
+/*1) Programa una función que cuenta el número de caracteres de
+una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10. */
+const  e1  =  ( cadena ) =>  {
+    if ( tipo  de cadena  ! =  'cadena' )  {
+        consola _ advertir ( ` Es necesario una cadena de texto ` ) ;
+        alert ( ' Es necesario una cadena de texto ' ) ;
+        consola _ advertir ( " Es necesario una cadena de texto " ) ;
+        alerta ( " Es necesaria una cadena de texto " ) ;
+    }  más  {
+        consola _ log ( `El número de caracteres que contiene es: ${ string . length } ` ) ;
+        return  alert ( `El número de caracteres que contiene es: ${ string . length } ` ) ;
+    }
+}
+/*2) Programa una función que te devuelva el texto recortado según el número
+de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola". */
+const  e2  =  ( cadena ,  cantidad ) =>  {
+    si ( ! cadena )  {
+        consola _ warn ( ` Necesitas una cadena de texto válida` ) ;
+        alerta ( ' Necesitas una cadena de texto válido ' ) ;   
+        consola _ warn ( " Necesitas una cadena de texto válido " ) ;
+        alerta ( " Necesitas una cadena de texto válido " ) ;   
+    }  más  {
+        if ( tipo  de cadena  ! =  'cadena' )  {
+            consola _ advertir ( ` Es necesario una cadena de texto ` ) ;
+            alert ( ' Es necesario una cadena de texto ' ) ; 
+            consola _ advertir ( " Es necesario una cadena de texto " ) ;
+            alerta ( " Es necesaria una cadena de texto " ) ; 
+        }  más  {
+            cantidad  =  cantidad  *  1 ;
+            if ( cantidad  &&  tipo de cantidad ===  'número' ) {   
+                consola _ log ( `El resultado del texto cortado es: ${ string . substr ( 0 , cantidad ) } ` ) ;
+                return  alert ( `El resultado del texto recortado es: ${ string . substr ( 0 , cantidad ) } ` ) ;
+            }  más  {
+                consola _ advertir ( ` Necesitas un número válido o que no sea 0` ) ;
+                alert ( ` Necesitas un número valido o que no sea 0` ) ;
+                consola _ advertir ( " Necesitas un número válido o que no sea 0 " ) ;
+                alert ( " Necesitas un número valido o que no sea 0 " ) ;
+            } } }
+
+/*3) Programa una función que dada una String te devuelva un Array
+de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ')
+devolverá ['hola', 'que', 'tal']. */
+const  e3  =  ( cadena ,  separador ) =>  {
+    if ( tipo  de cadena  ! =  'cadena' )  {
+        consola _ advertir ( 'Es necesario una cadena de texto' ) ;
+        volver  alerta ( 'Es necesario una cadena de texto' ) ;
+    }  más  si ( cadena )  {
+        resultado  =  cadena . dividir ( separador ) ;
+        consola _ registro ( resultado ) ;
+        return  alert ( 'Mira por consola el arreglo devuelto' ) ;
+    }  más  {
+        consola _ warn ( 'Coloca una cadena de texto que no está vacía' ) ;
+        return  alert ( 'Coloca una cadena de texto que no está vacía' ) ;
+    } ;
+}
+/*4) Programa una función que repite un texto X veces,
+Educación física. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo. */
+const  e4  =  ( cadena ,  repetirValor ) =>  {
+    si ( cadena ) {
+        cadena  =  cadena  +  ' ' ;
+        repetirValor  =  repetirValor  *  1 ;
+        si ( repetirValor )  {
+            consola _ registro ( cadena . repetir ( repetirValor ) ) ;
+            devolver  alerta ( cadena . repetir ( repetirValor ) ) ;
+        }  más  {
+            consola _ advertir ( ' El número de repeticiones proporcionado no es válido ' ) ;
+            volver  alerta ( ' El número de repeticiones proporcionado no es válido ' ) ;
+            consola _ advertir ( " El número de repeticiones proporcionado no es válido " ) ;
+            volver  alerta ( " El número de repeticiones proporcionado no es válido " ) ;
+        }
+    }  más  {
+        consola _ warn ( ' Necesitas una cadena de texto valida ' ) ;
+         alerta de retorno ( ' Necesitas una cadena de texto valida ' ) ;
+        consola _ warn ( " Necesitas una cadena de texto valida " ) ;
+        volver  alerta ( " Necesitas una cadena de texto valida " ) ;
+    } 
+}
+/*5) Programa una función que invierta las palabras de una cadena de
+texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH". */
+    constante  e5  =  cadena  =>  {
+        if  ( tipo de cadena ! == '  cadena' ) {   
+            volver  'Tipo de dato inválido'
+        }  más  {
+            sea  ​​temporal  =  ''
+            cadena _ dividir ( '' ) . forEach ( ( el ,  índice )  =>  temporal  +=  cadena [ ( cadena . longitud  -  1 )  -  índice ] )
+            retorno  temporal
+        }
+    }
+    consola _ log ( invertir ( 'Hola Mundo' ) ) }
+/*6) Programa una función para contar el número de veces que se repite una
+palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2. */
+    const  e6  =  ( texto  =  "" ,  palabra  =  "" )  => {
+    ! texto
+        ? consola _ advertir ( "introducir caracteres porfavor" )
+        : texto . longitud  <=  1
+        ? consola _ log ( "introducir al menos dos caracteres" )
+        : ! palabra
+        ? consola _ warn ( "introduce los caracteres a encontrar" )
+        : consola . log ( texto . split ( palabra ) . length  -  1 ) ; }
+
+/*7) Programa una función que valide si una palabra o frase dada, es un palíndromo
+(que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true. */
+    const  e7  =  ( palabra  =  "" )  =>  ! palabra
+    const  e7  =  ( palabra  =  "" )  =>  { ! palabra
+        ? consola _ advertir ( "por favor introduce una palabra" )
+        : consola . log ( palabra  ===  palabra . split ( "" ) . reverse ( ) . join ( "" ) ) ;
+        : consola . log ( palabra  ===  palabra . split ( "" ) . reverse ( ) . join ( "" ) ) ; }
+
+
+/*8) Programa una función que elimina cierto patrón de caracteres de un texto dado,
+Educación física. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá "1, 2, 3, 4 y 5. */
+    const  e8  =  ( texto  =  "" ,  patrón  =  "" )  =>  ! texto
+    const  e8  =  ( texto  =  "" ,  mecenas  =  "" )  =>  { ! texto
+        ? consola _ advertir ( "introducir un texto valido" )
+        : ! patrón
+        ? consola _ advertir ( "introducir un mecenas valido" )
+        : consola . log ( texto . split ( mecenas ) . join ( "" ) ) ;
+        : consola . log ( texto . split ( mecenas ) . join ( "" ) ) ; }
+    </ guión >
+
+</ cuerpo >
+</ html >
